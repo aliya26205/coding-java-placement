@@ -6,3 +6,4 @@ class Main {
         System.out.println(a+" "+b+" "+c+" "+d);
     }
 }
+//output:-11 11 10 11
