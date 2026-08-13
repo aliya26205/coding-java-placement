@@ -46,5 +46,14 @@ class Main {
             }
         }
         System.out.println(map);
+        int maxfreq=0;
+        int num=0;
+        for(int key: map.keySet()){
+            if (map.get(key)>maxfreq){
+                maxfreq=map.get(key);
+                num=key;
+            }
+        }
+        System.out.println(num+" has frequency: "+maxfreq);
     }
 }
