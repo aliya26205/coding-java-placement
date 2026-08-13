@@ -26,9 +26,14 @@ class Solution {
 }
 
 /*
+Input: nums = [1,2,3,1], k = 3
+Output: true
+solution:
 1 2 3 1
 0 1 2 3
 
 hashmap
 1:0 , 2:1, 3:2, 
+
+so basically whenever the cdondition is wrong it will insert in hashmap next when condition is true that is if value is present in hashmap it will check for abs if both true returns true if not value in hashmap is updated 
 */
