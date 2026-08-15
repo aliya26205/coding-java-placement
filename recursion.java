@@ -23,11 +23,26 @@ class Main {
           return;
         else{
           System.out.print(n+" ");
-          fun(n-1);
+          fun(n-1);//tail recursion
         }
     }
 
     public static void main(String[] args) {
         fun(5);
+    }
+}
+
+//program 2:- to print 1 2 3 4 5 with recursion
+class Main {
+    public static void func(int n){
+        if(n<=0)
+          return;
+        else{
+            func(n-1);
+            System.out.print(n);//N0-tail recursion  or head recursion
+        }
+    }
+    public static void main(String[] args) {
+        func(5);
     }
 }
