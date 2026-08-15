@@ -46,3 +46,28 @@ class Main {
         func(5);
     }
 }
+
+// program 3: print name using recursion
+import java.util.*;
+class Main {
+    public static void printName(String name,int n){
+        /*using loop
+        for(int i=0;i<name.length();i++){
+            char ch=name.charAt(i);
+            System.out.println(ch);
+        }*/
+        if(n<0)
+          return;
+        else{
+            printName(name,n-1);
+            char ch=name.charAt(n);
+            System.out.println(ch);
+        }
+    }
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        int n=s.length();
+        printName(s,n-1);
+    }
+}
