@@ -17,6 +17,7 @@ class Main {
     }
 }
 // with dynamic program method(dp)(memoizing)
+//2 method in dp tabulation,memization
 import java.util.*;
 class Main {
     public static void main(String[] args) {
